@@ -24,59 +24,101 @@
     </ul>
     </nav>
 
-    <section class="max-w-7xl mx-auto py-16 px-5">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl font-bold mb-4">Get in Touch</h2>
-            <p class="text-gray-400 text-lg">Have a query or want to report a cyber issue? Reach out to us.</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+    <section class="py-24 bg-[#0a0f1d] min-h-screen flex items-center">
+    <div class="max-w-7xl mx-auto px-6">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             
-            <div class="space-y-8">
-                <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?q=80&w=2074&auto=format&fit=crop" alt="Office" class="rounded-xl shadow-2xl border border-gray-700 opacity-80 hover:opacity-100 transition">
-                
-                <div class="bg-gray-800 p-8 rounded-xl border-l-4 border-blue-500">
-                    <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
-                    <div class="space-y-4">
-                        <div class="flex items-center gap-4">
-                            <div class="bg-blue-900/50 p-3 rounded-full"><i class="fas fa-phone-alt text-blue-400"></i></div>
-                            <p class="text-lg">011-2345678 (Hotline)</p>
+            <div class="space-y-10">
+                <div>
+                    <h1 class="text-5xl font-extrabold text-white mb-6">Get in <span class="text-blue-500">Touch</span></h1>
+                    <p class="text-gray-400 text-lg leading-relaxed">
+                        Have you been a victim of a cybercrime? Or do you need legal advice regarding online safety? Our team is here to help you 24/7.
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="flex items-start gap-5">
+                        <div class="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center shrink-0">
+                            <i class="fas fa-map-marker-alt text-blue-500 text-xl"></i>
                         </div>
-                        <div class="flex items-center gap-4">
-                            <div class="bg-blue-900/50 p-3 rounded-full"><i class="fas fa-envelope text-blue-400"></i></div>
-                            <p class="text-lg">help@cciu.gov.lk</p>
+                        <div>
+                            <h4 class="text-white font-bold">Location</h4>
+                            <p class="text-gray-400 text-sm">CCIU Headquarters, Colombo, Sri Lanka</p>
                         </div>
-                        <div class="flex items-center gap-4">
-                            <div class="bg-blue-900/50 p-3 rounded-full"><i class="fas fa-map-marker-alt text-blue-400"></i></div>
-                            <p class="text-lg">Criminal Investigation Dept, Colombo 01.</p>
+                    </div>
+
+                    <div class="flex items-start gap-5">
+                        <div class="w-12 h-12 bg-green-500/10 rounded-xl flex items-center justify-center shrink-0">
+                            <i class="fas fa-phone-alt text-green-500 text-xl"></i>
                         </div>
+                        <div>
+                            <h4 class="text-white font-bold">Hotline</h4>
+                            <p class="text-gray-400 text-sm">+94 11 234 5678</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-5">
+                        <div class="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center shrink-0">
+                            <i class="fas fa-envelope text-purple-500 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-white font-bold">Email Support</h4>
+                            <p class="text-gray-400 text-sm">support@cciu.lk</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-6 border-t border-gray-800">
+                    <p class="text-white font-medium mb-4">Follow our Awareness Updates:</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition"><i class="fab fa-facebook-f text-white"></i></a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-400 transition"><i class="fab fa-twitter text-white"></i></a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition"><i class="fab fa-youtube text-white"></i></a>
                     </div>
                 </div>
             </div>
 
-            <div class="bg-gray-800 p-10 rounded-xl shadow-2xl border border-gray-700">
-                <h3 class="text-2xl font-bold mb-6">Send us a Message</h3>
-                <form name="contact" method="POST" data-netlify="true" class="space-y-6">
-                    <div>
-                        <label class="block text-gray-400 mb-2 font-semibold">Your Name</label>
-                        <input type="text" name="name" class="w-full bg-gray-900 border border-gray-600 rounded-lg p-4 focus:border-blue-500 focus:outline-none transition" placeholder="John Doe">
+            <div class="bg-gray-900/50 backdrop-blur-xl p-8 md:p-12 rounded-[2rem] border border-gray-800 shadow-2xl relative">
+                <div class="absolute -top-10 -right-10 w-32 h-32 bg-blue-500/20 blur-[80px] -z-10"></div>
+                
+                <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+                    <input type="hidden" name="access_key" value="METHANATA_OYAGE_KEY_EKA_DANNA">
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="text-gray-400 text-xs font-bold uppercase tracking-wider">Full Name</label>
+                            <input type="text" name="name" placeholder="John Doe" required class="w-full bg-gray-800/50 border border-gray-700 rounded-xl px-5 py-4 text-white focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-gray-400 text-xs font-bold uppercase tracking-wider">Email Address</label>
+                            <input type="email" name="email" placeholder="john@example.com" required class="w-full bg-gray-800/50 border border-gray-700 rounded-xl px-5 py-4 text-white focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition">
+                        </div>
                     </div>
-                    <div>
-                        <label class="block text-gray-400 mb-2 font-semibold">Email Address</label>
-                        <input type="email" name="email" class="w-full bg-gray-900 border border-gray-600 rounded-lg p-4 focus:border-blue-500 focus:outline-none transition" placeholder="john@example.com">
+
+                    <div class="space-y-2">
+                        <label class="text-gray-400 text-xs font-bold uppercase tracking-wider">How can we help?</label>
+                        <select name="subject" class="w-full bg-gray-800/50 border border-gray-700 rounded-xl px-5 py-4 text-white focus:border-blue-500 outline-none transition appearance-none">
+                            <option>General Inquiry</option>
+                            <option>Report a Cybercrime</option>
+                            <option>Legal Assistance</option>
+                        </option>
                     </div>
-                    <div>
-                        <label class="block text-gray-400 mb-2 font-semibold">Message / Complaint</label>
-                        <textarea name="message" rows="5" class="w-full bg-gray-900 border border-gray-600 rounded-lg p-4 focus:border-blue-500 focus:outline-none transition" placeholder="How can we help you?"></textarea>
+
+                    <div class="space-y-2">
+                        <label class="text-gray-400 text-xs font-bold uppercase tracking-wider">Message</label>
+                        <textarea name="message" rows="4" placeholder="Describe your issue here..." required class="w-full bg-gray-800/50 border border-gray-700 rounded-xl px-5 py-4 text-white focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition"></textarea>
                     </div>
-                    <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-blue-800 text-white font-bold py-4 rounded-lg hover:from-blue-700 hover:to-blue-900 transition transform hover:scale-105">
-                        Send Message
+
+                    <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white font-bold py-5 rounded-xl shadow-lg shadow-blue-500/20 transition duration-300 flex items-center justify-center gap-3">
+                        Send Message <i class="fas fa-paper-plane text-sm"></i>
                     </button>
                 </form>
             </div>
 
         </div>
-    </section>
+    </div>
+</section>
     <footer class="bg-[#050a15] border-t border-gray-800 pt-16 pb-8">
     <div class="max-w-6xl mx-auto px-5">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
