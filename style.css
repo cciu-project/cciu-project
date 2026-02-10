@@ -93,3 +93,12 @@ body {
 .laws-bg { background-image: linear-gradient(rgba(10,15,29,0.7), rgba(10,15,29,0.9)), url('https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=2070'); }
 .scams-bg { background-image: linear-gradient(rgba(30,0,0,0.75), rgba(10,15,29,0.95)), url('https://images.unsplash.com/photo-1563206767-5b1d972f9fb4?q=80&w=2070'); }
 .aware-bg { background-image: linear-gradient(rgba(10,15,29,0.7), rgba(10,15,29,0.9)), url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070'); }
+
+:root {
+    --swiper-navigation-color: #3b82f6;
+    --swiper-pagination-color: #3b82f6;
+}
+
+.swiper-slide img {
+    filter: brightness(0.7); /* පින්තූර ටික පොඩ්ඩක් ඩාර්ක් කරමු */
+}
