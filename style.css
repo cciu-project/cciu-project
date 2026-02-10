@@ -102,3 +102,12 @@ body {
 .swiper-slide img {
     filter: brightness(0.7); /* පින්තූර ටික පොඩ්ඩක් ඩාර්ක් කරමු */
 }
+footer a {
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    text-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
+    transform: translateX(5px); /* Link එක පොඩ්ඩක් දකුණට පනිනවා */
+    display: inline-block;
+}
