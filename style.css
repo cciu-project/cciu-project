@@ -1,31 +1,95 @@
-/* Meken thama menu eka harasata (horizontal) lassana karanne */
+/* Google Font එකක් ගමු ලස්සන වෙන්න */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+body {
+    background-color: #0a0f1d;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* --- NAVIGATION STYLE --- */
 .nav-container {
-    display: flex;
+    display: flex !important;
     justify-content: space-between;
     align-items: center;
-    background: #0a0f1d;
+    background: rgba(10, 15, 29, 0.9);
     padding: 15px 5%;
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(59, 130, 246, 0.2);
 }
 
 .nav-links {
-    display: flex; /* Meka thama menu eka peliyata thiyanne */
-    gap: 25px;
+    display: flex !important;
+    gap: 30px;
     list-style: none;
     margin: 0;
 }
 
+/* Mouse එක ගෙනියද්දී ලස්සන වෙන හැටි (Hover) */
 .nav-links a {
-    color: white;
+    color: #94a3b8;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 1.05rem;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 5px 0;
 }
 
-.logo-area {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.nav-links a:hover {
+    color: #3b82f6; /* Blue වෙනවා */
+    text-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
 }
+
+/* යටින් ඉරක් ඇදෙන animation එක */
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #3b82f6;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.contact-btn {
+    background: linear-gradient(90deg, #2563eb, #1d4ed8);
+    padding: 10px 20px !important;
+    border-radius: 50px;
+    color: white !important;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+}
+
+.contact-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.5);
+}
+
+/* --- HERO SECTION & BACKGROUNDS --- */
+.hero-section {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Scroll කරද්දී image එක හෙල්ලෙන්නේ නැති වෙන්න */
+}
+
+/* එක් එක් පිටුවට අදාළ Images මෙතනින් මාරු කරන්න */
+.home-bg { background-image: linear-gradient(rgba(10,15,29,0.7), rgba(10,15,29,0.9)), url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070'); }
+.laws-bg { background-image: linear-gradient(rgba(10,15,29,0.7), rgba(10,15,29,0.9)), url('https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=2070'); }
+.scams-bg { background-image: linear-gradient(rgba(30,0,0,0.75), rgba(10,15,29,0.95)), url('https://images.unsplash.com/photo-1563206767-5b1d972f9fb4?q=80&w=2070'); }
+.aware-bg { background-image: linear-gradient(rgba(10,15,29,0.7), rgba(10,15,29,0.9)), url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070'); }
