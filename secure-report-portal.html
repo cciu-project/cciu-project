@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><script src="https://cdn.tailwindcss.com"></script>
+    <title>CCIU | Reporting Portal</title>
+</head>
+<body class="bg-gray-900 text-white">
+    <div class="max-w-2xl mx-auto py-20 px-5">
+        <h2 class="text-3xl font-bold mb-6">Internal Reporting Portal</h2>
+        <p class="text-red-400 text-sm mb-6">Admin Use Only - Unofficial Testing Portal</p>
+        <form name="complaint" method="POST" data-netlify="true" class="space-y-4 bg-gray-800 p-8 rounded">
+            <input type="text" name="name" placeholder="Full Name" class="w-full bg-gray-700 p-3 rounded">
+            <input type="tel" name="phone" placeholder="Contact No" class="w-full bg-gray-700 p-3 rounded">
+            <textarea name="incident" placeholder="Describe the incident" class="w-full bg-gray-700 p-3 rounded h-32"></textarea>
+            <button type="submit" class="w-full bg-blue-600 py-3 rounded font-bold">Submit Report</button>
+        </form>
+    </div>
+</body>
+</html>
