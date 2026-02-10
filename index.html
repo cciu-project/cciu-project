@@ -47,7 +47,7 @@
                 Learn the laws, report incidents, and stay ahead of digital threats.
             </p>
             <div class="flex gap-6 justify-center">
-                <a href="awareness.html" class="bg-blue-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-700 transition flex items-center gap-3">
+                <a href="javascript:void(0)" onclick="openVideo('https://www.youtube.com/embed/dQw4w9WgXcQ')" class="bg-blue-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-700 transition flex items-center gap-3">
                     <i class="fas fa-play-circle"></i> Watch Safety Videos
                 </a>
                 <a href="laws.html" class="bg-gray-800 border border-gray-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-700 transition">
@@ -96,7 +96,35 @@
         pagination: { el: ".swiper-pagination", clickable: true },
         navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
     });
+
+function openVideo(videoUrl) {
+    document.getElementById('videoModal').classList.remove('hidden');
+    document.getElementById('youtubeVideo').src = videoUrl + "?autoplay=1";
+    document.body.style.overflow = 'hidden'; // Scroll එක නවත්තනවා
+}
+
+function closeVideo() {
+    document.getElementById('videoModal').classList.add('hidden');
+    document.getElementById('youtubeVideo').src = "";
+    document.body.style.overflow = 'auto'; // Scroll එක ආපහු දෙනවා
+}
+
+// Modal එකෙන් එලිය ක්ලික් කරොත් Close වෙන්න
+window.onclick = function(event) {
+    let modal = document.getElementById('videoModal');
+    if (event.target == modal) {
+        closeVideo();
+    }
+}
 </script>
+<div id="videoModal" class="fixed inset-0 z-[2000] hidden flex items-center justify-center bg-black/90 p-4">
+    <div class="relative w-full max-w-4xl aspect-video bg-black rounded-xl overflow-hidden shadow-2xl">
+        <button onclick="closeVideo()" class="absolute top-4 right-4 text-white hover:text-red-500 z-[2001] bg-black/50 p-2 rounded-full">
+            <i class="fas fa-times text-2xl"></i>
+        </button>
+        <iframe id="youtubeVideo" class="w-full h-full" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+</div>
 <footer class="bg-[#050a15] border-t border-gray-800 pt-16 pb-8"> 
     <div class="max-w-6xl mx-auto px-5">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
