@@ -115,3 +115,12 @@ footer a:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
+
+.border-l-4 {
+    border-left-width: 6px; /* තව ටිකක් ඝනකමට පේන්න */
+}
+
+/* Hover කරද්දී පොඩි glow එකක් එන්න */
+.bg-gray-900:hover {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.1);
+}
